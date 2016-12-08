@@ -3,7 +3,10 @@ const assert = require('assert');
 
 describe('when passed argument is undefined', () => {
     it('it should be clearly communicated', () => {
-        assert.equal('{} is undefined', makeSure(undefined).errors[0])
+
+        let theobject = undefined;
+        let result = makeSure(undefined);
+        assert.equal('{} is undefined', result.errors[0])
     })
 })
 
