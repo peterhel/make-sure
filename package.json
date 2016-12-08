@@ -6,6 +6,7 @@
   "author": "Peter Helenefors <peter@hertigcarl.se>",
   "license": "ISC",
   "scripts": {
-    "build": "./build"
+    "build": "./build",
+    "prepublish": "npm run build"
   }
 }
