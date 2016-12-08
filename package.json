@@ -1,11 +1,11 @@
 {
   "name": "msjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "make-sure.js",
   "author": "Peter Helenefors <peter@hertigcarl.se>",
   "license": "ISC",
   "scripts": {
-    "build" : "./build"
+    "build": "./build"
   }
 }
