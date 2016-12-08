@@ -2,10 +2,10 @@
   "name": "make-sure",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "make-sure.js",
+  "author": "Peter Helenefors <peter@hertigcarl.se>",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "build" : "./build"
+  }
 }

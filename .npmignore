@@ -35,5 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-make-sure.js
-make-sure-1.0.0.tgz
+
+build
+index.js
+test/
+*.tgz
+.npmignore

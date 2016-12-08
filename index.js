@@ -26,5 +26,5 @@ class MakeSure {
 }
 
 module.exports = function makeSure(o) {
-    return new MakeSure(o);
+    return new MakeSure(o, undefined, undefined);
 }

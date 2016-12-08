@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cat index.js | java -jar ~/bin/compiler.jar > make-sure.js
+mocha

@@ -1,4 +1,4 @@
-const makeSure = require('../index.js');
+const makeSure = require('../make-sure.js');
 const assert = require('assert');
 
 describe('when passed argument is undefined', () => {
