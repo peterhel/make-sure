@@ -24,6 +24,22 @@ describe('when an expected property is undefined', () => {
 
     })
 })
+describe('when an expected property is on and undefined parent', () => {
+    it('it should be clearly communicated', () => {
+        const o = {
+            dude: {
+                surname: 'lebowski'
+            }
+        };
+
+        assert.equal(makeSure(o)
+          .has('donnie', x => {
+            x.has('urn')
+          })
+        .errors[0], '{}.donnie is undefined')
+
+    })
+})
 describe('when multiple properties are undefined', () => {
     it('it should be appended to the errors array', () => {
         const o = {

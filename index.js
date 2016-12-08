@@ -11,14 +11,10 @@ class MakeSure {
     }
 
     has(prop, fn) {
-        if (fn) {
-            fn(new MakeSure(this.o[prop], [this.parent, prop].join('.'), this.errors));
-
-            return this;
-        }
-
         if (!this.o[prop]) {
             this.errors.push(`${this.parent || 'root'}.${prop} is undefined`);
+        } else if (fn) {
+            fn(new MakeSure(this.o[prop], [this.parent, prop].join('.'), this.errors));
         }
 
         return this;
