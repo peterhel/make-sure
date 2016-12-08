@@ -1,5 +1,5 @@
 # make-sure
-Are you tired of those huge fucking validation libs that have thousands of features you don't give a shot about? Is 97% of your validation just about avoiding undefined?
+Are you tired of those huge fucking validation libs that have thousands of features you don't give a shit about? Is 97% of your validation just about avoiding undefined?
 
 I got you covered my friend!
 ```
