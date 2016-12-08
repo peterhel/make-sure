@@ -19,6 +19,12 @@ class MakeSure {
 
         return this;
     }
+
+    throw() {
+      if(this.errors.length > 0) {
+        throw new Error(this.errors.join(', '));
+      }
+    }
 }
 
 module.exports = function makeSure(o) {

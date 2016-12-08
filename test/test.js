@@ -54,3 +54,17 @@ describe('when multiple properties are undefined', () => {
 
     })
 })
+describe('when throw is called when errors exist', () => {
+    it('it should throw Error', () => {
+        const o = {
+            dude: {
+
+            }
+        };
+
+        assert.throws(() => {makeSure(o).has('dude', x => {
+            x.has('firstname').has('lastname')
+        }).throw()}, Error)
+
+    })
+})
